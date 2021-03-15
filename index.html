@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<section class="tasklist">
+	<div class="tasklist__container container">
+		<h1 class="tasklist__title">Трекер задач</h1>
+		<form class="task_creator add_form">
+			<h2 class="task_creator__title">Создать новую задачу</h2>
+			<label for="task_creator__desc">Описание</label>
+			<input type="text" placeholder="Введите описание" id="task_creator__desc" required>
+			<label for="task_creator__priority">Приоритет</label>
+			<select id="task_creator__priority">
+				<option value="-1" selected>Выберите приоритет</option>
+				<option value="0">Низкий</option>
+				<option value="1">Средний</option>
+				<option value="2">Высокий</option>
+			</select>
+			<label for="task_creator__for">Назначить</label>
+			<input placeholder="Введите ответственного" type="text" id="task_creator__for" required>
+			<button type="submit" class="task_creator__btn">+ Добавить</button>
+		</form>
+		<div class="tasks">
+
+		</div>
+	</div>
+</section>
+<script src="./js/script.js"></script>
+</body>
+</html>
